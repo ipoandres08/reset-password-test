@@ -10,6 +10,6 @@ const api = axios.create({
 });
 
 export const resetPassword = async (email) => {
-    const response = await api.post("/auth/reset-password", {email})
+    const response = await api.post("/", {email})
     return response.data;
 }
